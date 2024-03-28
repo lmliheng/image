@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<!-- 英语就是en -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="" />
+    <meta name="author" content="">
+    <meta name="description" content="" />
+    <link rel="Shortcut Icon" href="http://web.yunduanjianzhan.cn/images/logos/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../static/login.css">
+    <title>图床登录</title>
+  </head>
+  <body>
+    <div class="login-container">
+        <div class="login-header">
+            <img src="http://web.yunduanjianzhan.cn/images/logos/logo.png" alt="Logo" class="logo">
+         
+        </div>
+        <form action="{{ url_for('login') }}" method="post">
+            <div class="input-group">
+                <label for="username" class="label">用户名：</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">密码：</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="actions">
+                <input type="submit" value="登录" class="custom-btn btn-6" >
+                <!-- 可以添加“忘记密码”链接等 -->
+            </div>
+        </form>
+    </div>
+
+    <simpson>
+        <crane><f></f></crane>
+        <eyes></eyes>
+        <nose></nose>
+        <mouth>
+          <m1></m1>
+          <m2></m2>
+          <m3></m3>
+        </mouth>
+        <neck></neck>
+        <ear></ear>
+        <bubble>欢迎来到小恒图床登录界面<br> 当然，很简单的flask后端框架的小项目<small>英雄！  看看你实力能否破解它</small></bubble>
+      </simpson>
+
+    <script src="../static/login.js"></script>
+</body>
+  </html>
